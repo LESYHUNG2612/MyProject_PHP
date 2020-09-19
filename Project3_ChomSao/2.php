@@ -13,8 +13,8 @@
     $time = "";
     $result= "";
     if(isset($_POST["Day"]) && isset($_POST["Month"])){
-       echo $Day = $_POST["Day"];
-       echo $Month = $_POST["Month"];
+       $Day = $_POST["Day"];
+       $Month = $_POST["Month"];
       
        if(is_numeric($Day) && is_numeric($Month)){
         $flagShow = true;
