@@ -1,0 +1,37 @@
+@charset "UIF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.Content{
+    position: relative;
+    top: 100px;
+    left: 300px;
+    height: 300px;
+    width: 700px;
+    z-index: 1;
+    background: wheat;
+    border: 10px solid rgb(20, 241, 13);
+}
+.Content h1{
+    color: red;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.Content form div .row{
+    margin-top: 20px;
+}
+.Content div .row span{
+    display: inline-block;
+    width: 255px;
+    text-align: center;
+}
+.Content div .row input[type=text]{
+   padding: 3px 5px;
+}
+.Content div .row submit[type=submit]{
+    padding: 3px 5px;
+    display: block;
+    margin: 0px auto 20px auto;
+ }
