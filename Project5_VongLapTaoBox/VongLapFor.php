@@ -18,23 +18,23 @@
         <!--dung from tao o nhap du lieu do nguoi dung nhap vao-->
         <form action="#" method="POST" name="main-forn">
             <div class="row">
-                <span>Nhập Nội Dung box(px)</span>
+                <span>Nhập Nội Dung box(px):</span>
                 <input type="text" name="NoiDung" value = <?php echo $NoiDung;?> />
             </div><!--Nhap text box-->
             <div class="row">
-                <span>Nhập Chiều Dài box(px)</span>
+                <span>Nhập Chiều Dài box(px):</span>
                 <input type="number" name="ChieuDai" value = <?php echo $ChieuDai;?> />
             </div><!--width cho box-->
             <div class="row">
-                <span>Nhập Chiều Rộng box(px)</span>
+                <span>Nhập Chiều Rộng box(px):</span>
                 <input type="number" name="ChieuRong" value = <?php echo $ChieuRong;?> />
             </div><!--height cho box-->
             <div class="row">
-                <span>Nhập Số box</span>
-                <input type="number" name="SoBox" value = <?php echo $SoBox;?> />
+                <span>Nhập Số box:</span>
+                <input class="NutBox" type="number" name="SoBox" value = <?php echo $SoBox;?>/>
             </div><!--số box cần tạo-->
             <div class="row">
-                <input type="submit" value="Lấy Nội Dung"/>
+                <input type="submit" value="Xuất Box"/>
             </div> 
         </from>
     </div>

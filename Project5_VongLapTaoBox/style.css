@@ -3,24 +3,23 @@
     margin: 0px;
 }
 div.Container{
-    width: auto;
-    height: auto;
-    margin: 20px auto;
-    border: 2px solid black;
-}
-div.Container1{
-    width: 600px;
+    width: 95%;
     height: auto;
     margin: 20px auto;
     border: 5px solid black;
     border-radius: 5px;
 }
+div.Container1{
+    width: 600px;
+    height: auto;
+    margin: 20px auto;
+    border: 10px solid black;
+    border-radius: 5px;
+}
 div.Container1 div{
-    
     margin:  5px 5px 5px 5px;
     text-align: left;
     margin-bottom: 10px;
-   
 }
 div.Container div{
     border: 1px solid #999;
