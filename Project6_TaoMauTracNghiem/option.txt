@@ -1,0 +1,8 @@
+Question_id|Option_id|Option|Point
+11|a|Vào Buổi sáng|2
+11|b|Vào Buổi trua|4
+11|c|Vào Buổi toi|6
+12|a|khá nhanh với bước chân dài|2
+12|b|khá nhanh |4
+12|c|không nhanh |6
+12|d|không nhanh với bước ngắn|2

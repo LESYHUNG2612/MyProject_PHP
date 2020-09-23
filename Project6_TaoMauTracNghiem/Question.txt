@@ -1,0 +1,3 @@
+id| Question
+11| Bạn cảm thấy dễ chịu nhất  khi nào?
+12| Bạn thường bước đi:

@@ -1,0 +1,33 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.content{
+    width: 95%;
+    height: auto;
+    background: #9999;
+    border: 4px solid black;
+    border-radius: 2px;
+    position: relative;
+    top :10px;
+    left: 20px;
+    line-height: 30px;
+}
+.content h1{
+    text-align: center;
+    color: red;
+    padding: 20px;
+}
+.content form div p span{
+    color: black;
+    font-weight: bold;
+}
+.content form div ul li {
+    list-style: none;
+    padding: 0px 30px;
+}
+.row{
+    text-align: center;
+    padding: 0% 80%  1%;
+    cursor: pointer;
+}

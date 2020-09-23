@@ -1,0 +1,4 @@
+min|max|result
+0|2|người khác nghĩ bạn nhút nhát
+2|4|người khác nghĩ bạn thẳng thắng
+4|20|người khác nghĩ bạn cá tính

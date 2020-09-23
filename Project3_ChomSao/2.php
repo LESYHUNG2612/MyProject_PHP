@@ -107,11 +107,11 @@
         <form action="#" method="POST" name="main-forn">
             <div class="row">
                 <span>Nhập Ngày Sinh</span>
-                <input type="text" name="Day" value = <?php echo $Day;?> />
+                <input type="number" name="Day" value = <?php echo $Day;?> />
             </div>
             <div class="row">
                 <span>Nhập Tháng Sinh</span>
-                <input type="text" name="Month" value = <?php echo $Month;?> />
+                <input type="number" name="Month" value = <?php echo $Month;?> />
                 <!--value = php echo $caculate; giư lai gia tri nhap vào-->
             </div>
             <div class="row">
