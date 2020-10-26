@@ -1,41 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Trắc nghiệm tính cách</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  
-    <div class="content">
-        <h1>Mẫu Trắc Nghiệm</h1>
-        <form action="php.php" method="POST" name=mainfrom>
-            
-            <?php
-            require_once "A.php";
-            require_once "B.php";
-            $NewArray = array();
-            foreach($ArrayQuestion as $key => $value){
-                $NewArray[$key]["Question"] = $value["Question"];
-                $NewArray[$key]["sentences"] = $ArrayOption[$key];
+    <?php
+            require_once 'function_question.php'; //$arrQuestions
+            require_once 'function_option.php'; //$arrOptions
+
+            $newArr = array();
+            foreach ($arrQuestions as $key => $value) {
+                $newArr[$key]['question'] = $value['question'];
+                $newArr[$key]['sentences'] = $arrOptions[$key];
             }
-            $i=1;
-            foreach ($NewArray as $key => $value) {
-                echo '<div class="Question">';
-                echo '<p><span>  Question'.$i.':</span>'.$value["Question"].'</p>';
-                echo '<ul>';
-                foreach($value["sentences"] as $keyC => $valueC) {
-                    echo '<li><label><input type="radio" name="'.$key.'" value="'.$valueC["Point"].'">'.$valueC["Option"].'</label></li>';
+?>
+    <div class="content">
+        <h1>Trắc nghiệm tính cách</h1>
+        <form action="result.php" method="POST" name="mainForm">
+            <?php
+                $i = 1;
+                foreach ($newArr as $key => $value) {
+                    echo '<div class="question">';
+                    echo '<p><span>Câu hỏi '.$i.': </span>'.$value['question'].'</p>';
+                    echo '<ul>';
+                    foreach ($value['sentences'] as $keyC => $valueC) {
+                        echo '<li><label><input type="radio" name="'.$key.'" value="'.$valueC["point"].'"> '.$valueC["option"].'</label></li>';
+                    }
+                    echo '</ul>';
+                    $i++;
+                    echo '</div>';
                 }
-                echo '</ul>';
-                $i++;
-            }  
             ?>
-            <div class="row">
-                <input type="sunmit" value="Kiểm Tra" name="submit"></input>
-            </div>            
+            <input type="submit" value="Kiểm tra" name="submit">
         </form>
+
     </div>
 </body>
+
 </html>

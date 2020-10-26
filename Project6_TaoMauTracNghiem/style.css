@@ -31,3 +31,12 @@
     padding: 0% 80%  1%;
     cursor: pointer;
 }
+.content input[type="submit"] {
+    margin: 0 auto;
+    display: block;
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+}
